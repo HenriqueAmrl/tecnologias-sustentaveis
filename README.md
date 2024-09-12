@@ -14,6 +14,10 @@ Este repositório é destinado ao sistema proposto como trabalho de conclusão d
 
 3. Acesse a aplicação no seu navegador: [http://localhost:5173](http://localhost:5173).
 
+4. Para acessar o painel, utilize as seguintes credenciais:
+
+   - **Usuário:** Thiago
+   - **Senha:** 123456
 
 ## Referências
 
