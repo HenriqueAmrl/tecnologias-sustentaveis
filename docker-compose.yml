@@ -1,11 +1,8 @@
 services:
   api:
-    build:
-      dockerfile: .docker/php/Dockerfile
+    image: henriqueamrl/tecnologias-sustentaveis-backend:latest
     environment:
       MYSQL_HOST: bd
-    volumes:
-      - ./api:/app
     ports:
       - "3000:3000"
     depends_on:
@@ -22,10 +19,7 @@ services:
     ports:
       - "3306:3306"
   frontend:
-    build:
-      dockerfile: .docker/node/Dockerfile
-    volumes:
-      - ./asf-project:/app
+    image: henriqueamrl/tecnologias-sustentaveis-frontend:latest
     ports:
       - "5173:5173"
     depends_on:
