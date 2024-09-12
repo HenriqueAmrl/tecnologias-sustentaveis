@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASF</title>
+  </head>
+  <body>    
+    <script type="module" src="/main.ts"></script>
+    <script type="module" src="/src/cadastro-emprestimo/main.ts"></script>
+
+    <header>
+      <h1>Acme Serviços Financeiros</h1>
+      <a href="index.html" class="button button-clear">Inicio</a>
+      <button id="logout">Sair</button>
+    </header>
+
+    <body class="container">
+      <h3>Solicitação de Empréstimo</h3>
+      <main>
+        <form>
+          <h4>Dados do empréstimo</h4>
+          <label for="pesquisa">CPF:</label>
+          <div class="busca-cliente">
+            <input type="search" name="" id="pesquisa">
+            <button type="button" id="pesquisar" class="button button-outline">🔎</button>
+          </div>
+          <div id="cliente" ></div>
+
+          <label for="valor">Valor:</label>
+          <input type="number" name="" id="valor" min="500" max="50.  000">
+
+          <label for="formaPagamento">Forma de Pagamento:</label>
+          <select name="pagamento" id="pagamento">
+            <option value="" selected>Selecione uma opção</option>
+          </select>
+          <div id="parcelas"></div>
+
+          <span id="erro" class="form-feedback"></span>
+
+          <button type="button" id="realizarEmprestimo" disabled>Realizar Emprestimo</button>
+          <button type="button" id="limpar" class="button button-clear">Limpar</button>
+        </form>
+      </main>
+  </body>
+</html>

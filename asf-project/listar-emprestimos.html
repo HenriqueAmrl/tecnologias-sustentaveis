@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASF - Empréstimos</title>
+  </head>
+  <body class="container">
+
+    <header>
+      <h1>Acme Serviços Financeiros</h1>
+      <a href="index.html" class="button button-clear">Inicio</a>
+      <button id="logout">Sair</button>
+    </header>
+
+    <h3>Empréstimos realizados</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Data e hora</th>
+          <th>Cliente (nome)</th>
+          <th>CPF</th>
+          <th>Valor Empréstimo (R$)</th>
+          <th>Forma de Pagamento</th>
+          <th>Valor Final (R$)</th>
+          <th>Parcelas</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script type="module" src="/main.ts"></script>
+    <script type="module" src="/src/listagem-emprestimo/main.ts"></script>
+  </body>
+</html>

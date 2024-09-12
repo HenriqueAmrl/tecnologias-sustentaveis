@@ -1,0 +1,34 @@
+services:
+  api:
+    build:
+      dockerfile: .docker/php/Dockerfile
+    environment:
+      MYSQL_HOST: bd
+    volumes:
+      - ./api:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - bd
+  bd:
+    image: mysql
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+      LANG: C.UTF-8
+    command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+    volumes:
+      - ./api/docs/bd:/docker-entrypoint-initdb.d
+      - dados-bd:/var/lib/mysql
+    ports:
+      - "3306:3306"
+  frontend:
+    build:
+      dockerfile: .docker/node/Dockerfile
+    volumes:
+      - ./asf-project:/app
+    ports:
+      - "5173:5173"
+    depends_on:
+      - api
+volumes:
+  dados-bd:

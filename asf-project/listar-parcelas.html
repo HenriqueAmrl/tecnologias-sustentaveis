@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASF - Empréstimos</title>
+  </head>
+  <body class="container">
+
+    <header>
+      <h1>Acme Serviços Financeiros</h1>
+      <a href="index.html" class="button button-clear">Inicio</a>
+      <a href="listar-emprestimos.html" class="button button-clear">Voltar</a>
+      <button id="logout">Sair</button>
+    </header>
+
+    <h3>Dados do Empréstimo</h3>
+    <output></output>
+    <table>
+      <thead>
+        <tr>
+          <th>Número</th>
+          <th>Vencimento (data)</th>
+          <th>Valor (R$)</th>
+          <th>Situação </th>
+          <th>Pagamento </th>
+        </tr>
+      </thead>
+      <tbody id="parcela"></tbody>
+    </table>
+
+    <span id="erro"></span>
+
+    <script type="module" src="/main.ts"></script>
+    <script type="module" src="/src/listagem-parcela-emprestimo/main.ts"></script>
+  </body>
+</html>

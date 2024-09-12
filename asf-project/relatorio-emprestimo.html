@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ASF</title>
+</head>
+<body>    
+<script type="module" src="/main.ts"></script>
+<script type="module" src="/src/relatorio-emprestimo/main.ts"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<header>
+    <h1>Acme Serviços Financeiros</h1>
+    <a href="index.html" class="button button-clear">Inicio</a>
+    <button id="logout">Sair</button>
+</header>
+
+<body class="container">
+    <h3>Relatório Empréstimo</h3>
+    <main>
+    <form id="form-relatorio">
+        <div>
+            <label for="dataInicial">Data início:</label>
+            <input type="date" name="" id="dataInicial">
+        </div>
+        <div>
+            <label for="dataFinal">Data final:</label>
+            <input type="date" name="" id="dataFinal">
+        </div>
+
+        <button id="gerar">Gerar</button>
+
+        <button id="mostrarDados">Mostrar Dados</button>
+    </form>
+
+    <span id="erro"></span>
+
+    <canvas id="grafico" height="100"></canvas>
+
+    <output></output>
+
+    <div id="dados"></div>
+
+    </main>
+</body>
+</html>

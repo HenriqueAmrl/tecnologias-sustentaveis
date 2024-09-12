@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASF - Login</title>
+  </head>
+  <body>    
+    <script type="module" src="/src/autenticacao/main.ts"></script>
+
+    <header>
+      <h1>Acme Serviços Financeiros</h1>
+    </header>
+
+    <body>
+      <main class="login-container">
+        <form id="form-login">
+          <h4>Dados de login</h4>
+          <label for="login">Login (nome ou e-mail):</label>
+          <input type="text" name="login" id="login">
+          <label for="senha">Senha:</label>
+          <input type="password" name="senha" id="senha">
+          <button type="submit" class="button button-outline entrar">Realizar login</button>
+          <span id="erro" class="form-feedback"></span>
+        </form>
+      </main>
+  </body>
+</html>

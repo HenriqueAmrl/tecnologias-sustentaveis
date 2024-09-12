@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASF</title>
+  </head>
+  <body>    
+    <script type="module" src="/main.ts"></script>
+    <script type="module" src="/src/cadastro-cliente/main.ts"></script>
+
+    <header>
+      <h1>Acme Serviços Financeiros</h1>
+      <a href="index.html" class="button button-clear">Inicio</a>
+      <button id="logout">Sair</button>
+    </header>
+
+    <body class="container">
+      <h3>Cadastro de Cliente</h3>
+      <main>
+        <form id="form-cliente">
+          <h4>Dados do cliente</h4>
+          <label for="nome">Nome:</label>
+          <input type="text" name="" id="nome">
+
+          <label for="dataNascimento">Data de nascimento:</label>
+          <input type="date" name="" id="dataNascimento">
+
+          <label for="cpf">CPF:</label>
+          <input type="text" name="" id="cpf">
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" name="" id="telefone">
+
+          <label for="email">E-mail:</label>
+          <input type="email" name="" id="email">
+
+          <label for="endereco">Endereço:</label>
+          <input type="text" name="" id="endereco">
+
+          <span id="erro" class="form-feedback"></span>
+
+          <button type="submit">Cadastrar</button>
+        </form>
+      </main>
+  </body>
+</html>

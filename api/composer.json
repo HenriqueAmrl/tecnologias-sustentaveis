@@ -1,0 +1,33 @@
+{
+    "name": "asf/api",
+    "type": "project",
+    "version": "1.0.0",
+    "require": {
+        "php": "^7.4|^8.0",
+        "slim/slim": "^4.13",
+        "slim/psr7": "^1.6",
+        "ext-bcmath": "*"
+    },
+    "require-dev": {
+        "kahlan/kahlan": "^5.2",
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Asf\\Api\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Asf\\Api\\Tests\\": "spec/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "@kahlan",
+            "@phpstan"
+        ],
+        "kahlan": "kahlan",
+        "phpstan": "phpstan"
+    }
+}
